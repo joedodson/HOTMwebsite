@@ -2,32 +2,35 @@ body {
     margin:0;
     padding:0;
     font-family: "Open Sans", sans-serif;
-    background-color:lightgray;
+    background-color:white;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.graphic-container{
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.graphic-container img {
-    max-width: 100%;
 }
 
 #header-container{
     margin: auto;
     padding: 0;
     overflow: hidden;
-    position: absolute;
-    top: 8px;
-    right: 15%;
-    left: 15%;
+    position: relative;
     max-width: 70%;
+}
+
+#header-container a:link {
     color: black;
 }
+
+#header-container a:visited{
+    color: black;
+}
+
+#header-container a.selected{
+    color: red;
+}
+
+#header-container a:hover{
+    color:gray;
+}
+
 
 #header-logo img{
     float:left;
@@ -83,8 +86,14 @@ div#navbar li a {
     font-size: 1.25vw;
 }
 
-div#navbar li a:hover {
-    color:ghostwhite;
+.graphic-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.graphic-container img {
+    max-width: 100%;
 }
 
 .graphic-text{
