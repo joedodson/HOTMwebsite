@@ -1,0 +1,10 @@
+<div class="quick-info">
+    <span>Phone</span>
+    <span class="header-divider">|</span>
+    <span>Map</span>
+    <span class="header-divider">|</span>
+    <span>Quote</span>
+</div>
+    <ul>
+        <li *ngFor="let link of links"><a routerLink={{link.url}}>{{link.text}}</a></li>
+    </ul>

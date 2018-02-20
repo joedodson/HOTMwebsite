@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+#container1{
+    display: grid;
+    grid-template-areas:
+      'picture picture menu1 menu1'
+      'picture picture menu2 menu2';
+    background-color: #2196F3;
+}
+#container1 > div{
+    font-size: 1.5vw;
+}
+.image{
+    grid-area: picture;
+    position: relative;
+    left: 20%;
+}
+.image img{
+    width: 20vw;
+}
+#topright{
+    grid-area: menu1;
+    position: relative;
+    top: 75%;
+    text-align: right;
+    right: 20%;
+}
+#bottomright{
+    grid-area: menu2;
+    position: relative;
+    top: 35%;
+    text-align: right;
+    right: 20%;
+}
+ul{
+    list-style: none;
+}
+li{
+    float:right;
+    padding: 10px;
+}
