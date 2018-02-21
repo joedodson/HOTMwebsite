@@ -16,40 +16,49 @@
     }
 }
 
-#header-grid-container{
-    display: grid;
-    border: 1px solid black;
-    height: 100%;
-    grid-template-areas:
-      'picture picture menu1 menu1 menu1'
-      'picture picture menu2 menu2 menu2';
+div.container{
+  float: left;
+  position: relative;
+  width: 70%;
+  left: 15%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  background-color: #900000;
 }
 
-#header{
-    position: relative;
-    margin: auto;
-    width: 100%;
-    height: 14vw;
+div.quick-info{
+  float:right;
+  position: absolute;
+  color: white;
+  bottom: 5%;
+  right: 0;
+  border: 1px solid black;
+  font-size: 20px;
 }
 
-#header-container{
-    position: absolute;
-    right: 15%;
-    left: 15%;
-    margin: auto;
-    width: 75%;
+div > i {
+  padding: 0px 3px 0px 15px;
+  line-height: 30px;
 }
 
-div{
-    display: inline-block;
+div.cta{
+  float:right;
+  line-height: 0;
 }
 
-div#menu-container{
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
+div.cta button{
+  margin: 0 0 0 15px;
+  padding: 17px 30px;
+  background-color: lightgreen;
+}
+
+div.image{
+  float:left;
+  width: 192px;
+  height: 110;
 }
 
 img{
-    width: 25vw;
+  width: 192px;
 }
