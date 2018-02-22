@@ -1,0 +1,11 @@
+<div class="slideshow-container">
+  <div class="image"><img *ngFor="let slide of slides; let i = index" [hidden]="!isCurrentSlide(i)" class="slide" src={{slide.src}}></div>
+  <div class="left-icon"><i id="left" class="glyphicon glyphicon-chevron-left" (click)="prevSlide()"></i></div>
+  <div class="right-icon"><i id="right" class="glyphicon glyphicon-chevron-right" (click)="nextSlide()"></i></div>
+
+  <div style="text-align:center">
+    <span class="dot" (click)="setSlide(0)"></span>
+    <span class="dot" (click)="setSlide(1)"></span>
+    <span class="dot" (click)="setSlide(2)"></span>
+  </div>
+</div>
