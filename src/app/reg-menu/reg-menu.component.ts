@@ -22,7 +22,6 @@ export class RegMenuComponent implements OnInit {
   @HostListener('window:scroll', []) onWindowScroll(){
     if(window.pageYOffset >= this.navOffset){
       this.navbar.classList.add("sticky");
-      console.log("working");
     }
     else{
       this.navbar.classList.remove("sticky");

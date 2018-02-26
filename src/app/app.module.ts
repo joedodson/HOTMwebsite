@@ -11,6 +11,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { RegMenuComponent } from './reg-menu/reg-menu.component';
 import { ServicesComponent } from './services/services.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     HomepageComponent,
     RegMenuComponent,
     ServicesComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,92 @@
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/engine.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+//hero image
+img{
+    max-width: 100%;
+    border-bottom: 10px solid red;
+}
+
+//display cards
+@media(min-width:100px){
+    .card-container{
+        font-size: 4vw;
+    }
+}
+
+@media(min-width:600px){
+    .card-container{
+        font-size: 2vw;
+    }
+}
+@media(min-width:800px){
+    .card-container{
+        font-size: 1.25vw;
+    }
+    .card img{
+        display: inline-block;
+    }
+}
+.card-container{
+    text-align: center;
+    padding: 50px;
+}
+
+.card{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 30%;
+    height: 40vw;
+    min-height: 400px;
+    min-width: 300px;
+    margin: 20px;
+    padding: 25px;
+    background-color: rgba(53, 53, 53, 0.9);
+    border: 2px solid #900000;
+    border-radius: 5px;
+    font-size: inherit;
+}
+
+.card img{
+    max-width: 90%;
+    border: 1.5px solid black;
+}
+
+.card h1{
+    color: white;
+    text-decoration: underline;
+    font-size: 2.25em;
+    margin: 15px 0;
+}
+
+.card p{
+    color: white;
+    font-size: 1em;
+}
+
+button{
+    position: absolute;
+    background: linear-gradient(#900000, #fa0101, #900000);
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    width: 95%;
+    margin: auto;
+    padding: 5px 0;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover{
+    background: linear-gradient(#c70000, #fa3737, #c70000)
+}
+
