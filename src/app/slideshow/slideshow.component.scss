@@ -20,9 +20,9 @@
 //main container
 div.slideshow-container{
     position: relative;
-    top: 100px;
     margin: auto;
-    max-width: 70%;
+    width: 80%;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@ img{
 
 //left right icons
 div.left-icon, div.right-icon{
-    position: absolute;
+    position: relative;
     top: 50%;
     height: auto;
 }

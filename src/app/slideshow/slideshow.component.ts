@@ -9,9 +9,9 @@ export class SlideshowComponent implements OnInit {
 
   INTERVAL = 3000;
   slides = [
-    {name:"image1", src:"../../assets/ss1.png"},
-    {name:"image2", src:"../../assets/ss2.png"},
-    {name:"image3", src:"../../assets/ss3.png"}
+    {name:"image1", src:"../../assets/carss1.jpg"},
+    {name:"image2", src:"../../assets/carss2.jpg"},
+    {name:"image3", src:"../../assets/carss3.jpg"}
   ];
   currentIndex = 0;
   timeoutRef = undefined;

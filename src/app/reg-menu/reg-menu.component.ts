@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-reg-menu',
@@ -17,9 +17,24 @@ export class RegMenuComponent implements OnInit {
     {url: "/contact", text: "Contact"}
   ]
   
-  constructor() { }
+  navbar = undefined;
+  navOffset = undefined;
+  @HostListener('window:scroll', []) onWindowScroll(){
+    if(window.pageYOffset >= this.navOffset){
+      this.navbar.classList.add("sticky");
+      console.log("working");
+    }
+    else{
+      this.navbar.classList.remove("sticky");
+    }
+  }
+
+  constructor() { 
+  }
 
   ngOnInit() {
+    this.navbar = document.getElementById("navbar");
+    this.navOffset = this.navbar.offsetTop;
   }
 
 }
