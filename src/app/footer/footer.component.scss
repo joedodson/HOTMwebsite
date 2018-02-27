@@ -1,0 +1,121 @@
+.container{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 0 0;
+    margin: 0;
+    background-color: rgb(59, 59, 59);
+    border-top: 5px solid #900000;
+    font-size: 24px;
+}
+
+.image-mission-container, .navigate-container, .social-media-container{
+    display: inline-block;
+    background-color: gray;
+    border: 1px solid black;
+    width: 30%;
+    height: 300px;
+    vertical-align: top;
+}
+
+h4{
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.image-mission-container img{
+    max-width: 90%;
+}
+
+.image-mission-container{
+    display: inline-block;
+}
+
+p{
+    font-size: .5em;
+}
+
+.navigate-container{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+li {
+    margin: 10px 4px;
+    width: 120px;
+}
+
+li a{
+    text-decoration: none;
+    color: #9c9c9c;
+    font-size: .85em;
+}
+
+.social-media-container{
+    display: inline-block;
+    width: 20%;
+}
+
+.fa {
+    padding: auto;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    margin: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: .7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.contact-container, .legal-container{
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    margin: 0;
+    border: 1px solid black;
+}
+
+h5{
+    font-size: 1em;
+}
+
+h6{
+    font-size: .5em;
+}
