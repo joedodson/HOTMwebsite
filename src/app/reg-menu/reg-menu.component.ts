@@ -25,7 +25,6 @@ export class RegMenuComponent implements OnInit {
     {url: "/services", text: "Services"},
     {url: "/products", text: "Products"},
     {url: "/gallery", text: "Gallery"},
-    {url: "/location", text: "Location"},
     {url: "/about", text: "About Us"},
     {url: "/contact", text: "Contact"}
   ]

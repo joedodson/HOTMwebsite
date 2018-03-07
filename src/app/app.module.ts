@@ -12,6 +12,9 @@ import { RegMenuComponent } from './reg-menu/reg-menu.component';
 import { ServicesComponent } from './services/services.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ProductsComponent } from './products/products.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
     RegMenuComponent,
     ServicesComponent,
     SlideshowComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ProductsComponent,
+    GalleryComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
