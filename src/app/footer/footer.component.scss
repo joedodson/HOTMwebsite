@@ -166,14 +166,20 @@ a{
     }
 }
 
-@media(min-width:1200px){
+@media only(min-width:650px){
     .image-ctnr{
-        display: inline-block;
-        margin-right: 5px;
+        height: 200px;
+        img{
+            max-height: 200px;
+        }
     }
     .mission-ctnr{
-        margin-left: 5px;
+        margin-right: 10px;
     }
+    .navigate-ctnr{
+        margin-left: 10px;
+    }
+
 }
 
 @media(min-width:850px){
@@ -190,18 +196,12 @@ a{
     }
 }
 
-@media(min-width:650px){
+@media(min-width:1200px){
     .image-ctnr{
-        height: 200px;
-        img{
-            max-height: 200px;
-        }
+        display: inline-block;
+        margin-right: 5px;
     }
     .mission-ctnr{
-        margin-right: 10px;
+        margin-left: 5px;
     }
-    .navigate-ctnr{
-        margin-left: 10px;
-    }
-
 }

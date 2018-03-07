@@ -47,7 +47,7 @@ export class RegMenuComponent implements OnInit {
     var elem = document.getElementById("smc");
     if(this.menuState === 'out'){
       var height = window.innerHeight;
-      elem.setAttribute("style", "width:300px; height:" + height + "px");
+      elem.setAttribute("style", "background-color: rgba(61, 61, 61, 1); width:290px; height:" + height + "px");
     }
     else{
       elem.setAttribute("style", "width:50px; height:50px");

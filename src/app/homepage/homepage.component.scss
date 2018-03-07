@@ -20,8 +20,8 @@ img{
     height: auto;
 }
 
-.card-container h1{
-    font-size: 4em;
+.card-container > h1{
+    font-size: 3em;
     color: white;
 }
 
@@ -29,16 +29,52 @@ img{
     display: inline-block;
     position: relative;
     vertical-align: top;
-    width: 60%;
-    min-width: 350px;
+    width: 80%;
+    min-width: 0px;
     max-width: 400px;
     height: auto;
-    margin: 20px;
-    padding: 25px;
+    margin: 5px;
+    padding: 5px 5px 15px 5px;
     background-color: rgba(53, 53, 53, 0.9);
     border: 2px solid #900000;
     border-radius: 5px;
     font-size: inherit;
+
+    img{
+        max-width: 90%;
+        border: 1.5px solid black;
+    }
+    
+    >h1{
+        color: white;
+        text-decoration: underline;
+        font-size: 2.25em;
+        margin: 15px 0;
+    }
+    
+    p{
+        color: white;
+        font-size: 1em;
+        margin-bottom: 30px;
+    }    
+}
+
+@media(min-width:415px){
+    .card-container > h1{
+        font-size: 4em;
+    }
+    .card{
+        min-width: 350px;
+        width: 60%;
+        margin: 20px;
+        padding: 25px;
+        >h1{
+            font-size: 3em;
+        }
+        >p{
+            font-size: 1.25em;
+        }
+    }
 }
 
 @media(min-width:850px){
@@ -55,25 +91,6 @@ img{
         width: 25%;
     }
 }
-
-.card img{
-    max-width: 90%;
-    border: 1.5px solid black;
-}
-
-.card h1{
-    color: white;
-    text-decoration: underline;
-    font-size: 2.25em;
-    margin: 15px 0;
-}
-
-.card p{
-    color: white;
-    font-size: 1.25em;
-    margin-bottom: 30px;
-}
-
 button{
     position: absolute;
     background: linear-gradient(#900000, #fa0101, #900000);

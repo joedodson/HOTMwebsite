@@ -1,4 +1,4 @@
-div.container{
+.container{
   text-align: center;
   width: 100%;
   padding: 0;
@@ -7,65 +7,94 @@ div.container{
   border-bottom: 5px solid #900000;
 }
 
-div.inner-container{
-  position: relative;
-  width: 70%;
-  height: 140px;
-  margin: 0 auto;
+.inner-container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+  vertical-align: bottom;
 }
 
-div.image{
-  position: absolute;
-  left: 0;
-  bottom: 5px;
+.image{
+  text-align: left;
+  vertical-align: bottom;
+  margin-top: auto;
 }
 
 img{
-  width: 192px;
+  width: 120px;
 }
 
-div.quick-info{
-  position: absolute;
+.quick-info{
   color: white;
-  right: 0;
-  bottom: 5px;
-  font-size: 16px;
-  padding: 0 0 0 200px;
-}
-
-div.quick-info *{
-  display: inline;
-}
-
-div > i {
-  padding: 0px 3px 0px 15px;
-  line-height: 30px;
-}
-
-div.cta{
-  margin: 0;
-}
-
-div.cta button{
-  margin: 0 15px;
-  padding: 5px 30px;
-  border-radius: 5px;
-  font-size: 20px;
+  font-size: 12px;
+  padding: 0;
+  margin-top: auto;
+  line-height: 12px;
   text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #63e76e;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
+  vertical-align: bottom;
+
+  i{
+    padding: 0px 3px 0px 15px;
+  }
+  .address{
+    padding: 0;
+    margin: 0;
+  }
+  .cta{
+    margin: 0;
+  }
+  .cta button{
+    margin: 5px 15px 0 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #63e76e;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .cta button:hover {
+    background-color: #53b85b;
+  }
+  .cta button:active {
+    background-color: rgb(18, 81, 153);
+    transform: translateY(2px);
+  }
+}
+@media(min-width:500px){
+  .quick-info{
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
-div.cta button:hover {
-  background-color: #53b85b;
+@media(min-width:600px){
+  .quick-info{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  img{
+    width: 180px;
+  }
 }
 
-div.cta button:active {
-  background-color: rgb(18, 81, 153);
-  transform: translateY(2px);
+@media(min-width:1000px){
+  .inner-container{
+    width: 85%;
+  }
+}
+
+@media(min-width:1300px){
+  .phone, .address, .cta{
+    display: inline;
+  }
+  .inner-container{
+    width: 70%;
+  }
 }

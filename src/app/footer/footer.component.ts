@@ -24,29 +24,22 @@ export class FooterComponent implements OnInit {
 
   @HostListener('window:resize', []) onWindowResize(){
     var width = window.innerWidth;
-    if(width < 1200){
-        document.getElementById("vs1").className = "hspacer";
-      if(width < 850){
-        document.getElementById("vs3").className = "hspacer";
+    if(width < 1200) document.getElementById("vs1").className = "hspacer";
+    else document.getElementById("vs1").className = "vspacer";
 
-        //only checking less than 600 if less than 800
-        if(width < 650) document.getElementById("vs2").className = "hspacer";
-        else document.getElementById("vs2").className = "vspacer";
-      }
-      else{
-        document.getElementById("vs3").className = "vspacer";
-      }
-      
-    }
-    else{
-      document.getElementById("vs1").className = "vspacer";
-    }
+    if(width < 850) document.getElementById("vs3").className = "hspacer";
+    else document.getElementById("vs3").className = "vspacer";
+
+    if(width < 650) document.getElementById("vs2").className = "hspacer";
+    else document.getElementById("vs2").className = "vspacer";
+    
     console.log(width);
   }
   
   constructor() { }
 
   ngOnInit() {
+    window.dispatchEvent(new Event('resize'));
   }
 
 }
