@@ -1,4 +1,4 @@
-.container{
+.ctnr{
     width: 100%;
     margin: 0;
     padding: 0;
@@ -10,19 +10,27 @@
 //hero image
 img{
     max-width: 100%;
-    border-bottom: 10px solid red;
+}
+
+.hspacer{
+    width: 100%;
+    height: 10px;
+    background-color: #900000;
 }
 
 //display cards
-.card-container{
+.card-ctnr{
     text-align: center;
     padding: 5px;
     height: auto;
-}
+    font-size: 16px;
+    background: linear-gradient(#747474, rgba(136, 136, 136, 0.2), rgba(136, 136, 136, 0));
 
-.card-container > h1{
-    font-size: 3em;
-    color: white;
+    > h1{
+        font-size: 3em;
+        color: white;
+        margin: 0 0 50px 0;
+    }
 }
 
 .card{
@@ -45,23 +53,99 @@ img{
         border: 1.5px solid black;
     }
     
-    >h1{
+    > h1{
         color: white;
         text-decoration: underline;
         font-size: 2.25em;
-        margin: 15px 0;
+        margin: 0;
     }
     
     p{
         color: white;
         font-size: 1em;
         margin-bottom: 30px;
-    }    
+    }
+
+    button{
+        position: absolute;
+        background: linear-gradient(#900000, #fa0101, #900000);
+        bottom: 1%;
+        left: 0;
+        right: 0;
+        width: 95%;
+        margin: auto;
+        padding: 5px 0;
+        font-size: 1.5em;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+    
+    button:hover{
+        background: linear-gradient(#c70000, #fa3737, #c70000)
+    }
+}
+
+.testimonial-ctnr{
+    width: 100%;
+    height: auto;
+    background-color: rgba(53, 53, 53, 0.9);
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    margin: auto;
+    padding: auto;
+
+    h1{
+        color: white;
+        font-size: 5em;
+        padding: 10px 0 25px 0;
+        margin: 0;
+    }
+}
+
+.testimonial{
+    width: 20%;
+    background-color: white;
+    border-radius: 10%;
+    margin: 50px auto;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: middle;
+
+    img{
+        border: 1px solid white;
+        border-radius: 50%;
+        max-width: 100px;
+    }
+
+    h2{
+        margin: 0;
+        color: #505050;
+    }
+
+    h3{
+        font-size: 1em;
+        margin: 0;
+        color: #505050;
+    }
+
+    .hspacer{
+        width: 90%;
+        height: 1px;
+        margin: 10px auto;
+        background: linear-gradient(-90deg, white, #a5a5a5, #747474, #a5a5a5, white);
+    }
+
+    p{
+        margin: 0;
+        color: #868686;
+    }
 }
 
 @media(min-width:415px){
-    .card-container > h1{
-        font-size: 4em;
+    .card-ctnr > h1{
+        font-size: 5em;
     }
     .card{
         min-width: 350px;
@@ -81,8 +165,8 @@ img{
     .card{
         width: 40%;
     }
-    .card-container{
-        padding: 50px;
+    .card-ctnr{
+        padding: 25px 50px 50px 50px;
     }
 }
 
@@ -90,23 +174,5 @@ img{
     .card{
         width: 25%;
     }
-}
-button{
-    position: absolute;
-    background: linear-gradient(#900000, #fa0101, #900000);
-    bottom: 1%;
-    left: 0;
-    right: 0;
-    width: 95%;
-    margin: auto;
-    padding: 5px 0;
-    font-size: 1.5em;
-    color: white;
-    border-radius: 5px;
-    border: none;
-}
-
-button:hover{
-    background: linear-gradient(#c70000, #fa3737, #c70000)
 }
 
