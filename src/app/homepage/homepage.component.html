@@ -1,42 +1,66 @@
 <div class="ctnr">
     <div class="bg-image"><img src="../../assets/carss3.jpg"></div>
     <div class="hspacer"></div>
-    <div class="card-ctnr">
-        <h1>What We Do</h1>
-        <div class="card" id="1">
-            <img src="../../assets/supercharger.jpg">
-            <h1>Performance</h1>
-            <p>
-                Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything
-            </p>
-            <button [routerLink]="['/services']">Performance</button>
-        </div>
-        <div class="card" id="2">
-            <img src="../../assets/supercharger.jpg">
-            <h1>Repair</h1>
-            <p>
-                Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything
-            </p>
-            <button [routerLink]="['/services']">Repair</button>
-        </div>
-        <div class="card" id="3">
-            <img src="../../assets/supercharger.jpg">
-            <h1>Parts</h1>
-            <p>
-                Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything
-            </p>
-            <button [routerLink]="['/products']">Products</button>
+    <div class="section" id="s1">
+        <div class="section-header"><h1>What We Do</h1></div>
+        <div class="card-ctnr">
+            <div class="card" id="1">
+                <img src="../../assets/supercharger.jpg">
+                <h1>Performance</h1>
+                <p>
+                    Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything
+                </p>
+                <button [routerLink]="['/services']">Performance</button>
+            </div>
+            <div class="card" id="2">
+                <img src="../../assets/supercharger.jpg">
+                <h1>Repair</h1>
+                <p>
+                    Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything
+                </p>
+                <button [routerLink]="['/services']">Repair</button>
+            </div>
+            <div class="card" id="3">
+                <img src="../../assets/supercharger.jpg">
+                <h1>Parts</h1>
+                <p>
+                    Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything
+                </p>
+                <button [routerLink]="['/products']">Products</button>
+            </div>
         </div>
     </div>
     <div class="hspacer"></div>
-    <div class="testimonial-ctnr">
-        <h1>Why Choose Us?</h1>
-        <div class="testimonial">
-            <img src="../../assets/customer1.jpg">
-            <h2>Jordan Howard</h2>
-            <h3>2007 Mustang</h3>
-            <div class="hspacer"></div>
-            <p>"Great group of guys, very careful to make sure you get just what you want, and extremely cost conscious. Always a great job."</p>
+    <div class="section" id="s2">
+        <div class="section-header"><h1>Why Choose Us?</h1></div>
+        <div class="testimonial-ctnr">
+            <div class="testimonial" id="left">
+                <div class="inner-ctnr">
+                    <img src="../../assets/customer1.jpg">
+                    <h2>Jordan Howard</h2>
+                    <h3>2010 Charger</h3>
+                    <div class="hspacer"></div>
+                    <div class="tmnl-text"><p>"Great group of guys, very careful to make sure you get just what you want, and extremely cost conscious. Always a great job."</p></div>
+                </div>
+            </div>
+            <div class="testimonial" id="middle">
+                <div class="inner-ctnr">
+                    <img src="../../assets/customer2.jpg">
+                    <h2>Randall Cutter</h2>
+                    <h3>2007 Mustang</h3>
+                    <div class="hspacer"></div>
+                    <div class="tmnl-text"><p>"I can't say enough about this shop. But what I can tell you is if you want HONESTY, and someone to work on you vehicle with integrity and give you some good quality work."</p></div>
+                </div>
+            </div>
+            <div class="testimonial" id="right">
+                <div class="inner-ctnr">
+                    <img src="../../assets/customer3.jpg">
+                    <h2>Linda Listen</h2>
+                    <h3>2015 Challenger</h3>
+                    <div class="hspacer"></div>
+                    <div class="tmnl-text"><p>"Great guy doing high quality work! You can't go wrong with HOT Performance!"</p></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
