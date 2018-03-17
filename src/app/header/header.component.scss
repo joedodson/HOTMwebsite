@@ -20,6 +20,10 @@
     line-height: 70px;
   }
 
+  .side-menu-cntr{
+    top: 15px;
+  }
+
   img{
     width: 6em;
   }
@@ -96,7 +100,7 @@
   z-index: 1000;
 
   ul{
-    display: block;
+    display: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -229,11 +233,11 @@ input{
     display: inline;
   }
   .inner-container{
-    width: 60%;
+    width: 65%;
   }
   .sticky{
     .inner-container{
-      width: 50%;
+      width: 60%;
     }
   }
 }
