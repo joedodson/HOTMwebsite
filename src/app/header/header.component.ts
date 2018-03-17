@@ -40,6 +40,10 @@ export class HeaderComponent implements OnInit {
     document.getElementById("mbc").classList.toggle("change");
   }
 
+  test(number){
+    var items = document.getElementsByClassName("menuitems");
+    
+  }
   constructor() { }
 
   ngOnInit() {

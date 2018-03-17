@@ -2,8 +2,60 @@
     <div class="bg-image"><img src="../../assets/carss3.jpg"></div>
     <div class="hspacer"></div>
     <div class="section" id="s1">
-        <div class="section-header"><h1>What We Do</h1></div>
-        <div class="card-ctnr">
+        <div class="section-header"><h1>High Performance Parts &amp; Installation</h1></div>
+        <div class="hspacer"></div>
+        <div class="inner-section parts">
+            <div class="text">
+                <h2>What We Carry</h2>
+                <p>
+                    At Hold On Tight Peformance we carry turbochargers and turbo 
+                    parts for every engine. We offer the highest quality parts, 
+                    from the top turbocharger brands, at prices that can't be beat. 
+                    We have thousands of turbos in stock, ready for immediate 
+                    shipping. Our USA based turbocharger specialists can help you 
+                    find what you need. All applications, including:
+                </p>
+                <button>Shop All Parts</button>
+            </div>
+            <div class="icon-ctnr">
+                <ul>
+                    <li *ngFor="let part of parts"><img src="../../assets/icons/parts/{{part}}"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="inner-section makes">
+            <div class="icon-ctnr">
+                <ul>
+                    <li *ngFor="let make of makes"><img src="../../assets/icons/makes/{{make}}"></li>
+                </ul>
+            </div>
+            <div class="text">
+                <h2>What We Work On</h2>
+                <p>
+                    With over 40 years experience we've worked on all makes and 
+                    models ranging from 1960 Pontiac GTO to 2018 Shelby Mustangs. 
+                    Whatever model you have, rest assured we will know what's best
+                    for your ride. 
+                </p>
+                <button>See What We Offer</button>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="section-header"><h1>Automotive Service &amp; Repair</h1></div>
+        <div class="hspacer"></div>
+        <div class="repair-icons-ctnr">
+            <ul>
+                <li *ngFor="let repair of repairs">
+                    <div class="icon-info">
+                        <img src="../../assets/icons/repairs/{{repair.url}}">
+                        <h3>{{repair.title}}</h3>
+                        <p>{{repair.text}}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="card-ctnr">
             <div class="card" id="1">
                 <img src="../../assets/supercharger.jpg">
                 <h1>Performance</h1>
@@ -28,12 +80,56 @@
                 </p>
                 <button [routerLink]="['/products']">Products</button>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="hspacer"></div>
     <div class="section" id="s2">
-        <div class="section-header"><h1>Why Choose Us?</h1></div>
-        <div class="testimonial-ctnr">
+        <div class="section-header"><h1>Why Trust Us?</h1></div>
+        <div class="inner-section-about">
+            <div class="point-ctnr">
+                <div class="point">
+                    <div class="icon"><img src="../../assets/icons/aboutus/experienced.png"></div>
+                    <div class="text">
+                        <h3>Experienced</h3>
+                        <p>
+                            Our mechanic has been working on cars since he was a 
+                            teenager. Now, he has over 30 years professional experience 
+                            and knows his way around almost any car.
+                        </p>
+                    </div>
+                </div>
+                <div class="learn-more">
+                    <h3>Learn More</h3>
+                </div>
+            </div>
+            <div class="point-ctnr">
+                <div class="point">
+                    <div class="icon"><img src="../../assets/icons/aboutus/certified.png"></div>
+                    <div class="text">
+                        <h3>Certified</h3>
+                        <p>
+                            Our mechanic has been working on cars since he was a 
+                            teenager. Now, he has over 30 years professional experience 
+                            and knows his way around almost any car.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="point-ctnr">
+                <div class="point">
+                    <div class="icon"><img src="../../assets/icons/aboutus/quality.png"></div>
+                    <div class="text">
+                        <h3>Quality</h3>
+                        <p>
+                            Our mechanic has been working on cars since he was a 
+                            teenager. Now, he has over 30 years professional experience 
+                            and knows his way around almost any car.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="testimonial-ctnr">
             <div class="testimonial" id="left">
                 <div class="inner-ctnr">
                     <img src="../../assets/customer1.jpg">
@@ -61,6 +157,6 @@
                     <div class="tmnl-text"><p>"Great guy doing high quality work! You can't go wrong with HOT Performance!"</p></div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

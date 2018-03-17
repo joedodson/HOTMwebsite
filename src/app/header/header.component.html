@@ -3,7 +3,7 @@
         <div class="image"><img src="../../assets/sample_logo.png"></div>
         <div class="nav-cntr" id="navbar">
             <ul>
-                <li *ngFor="let link of links"><a routerLink={{link.url}}>{{link.text}}</a></li>
+                <li *ngFor="let link of links"><a routerLink={{link.url}} routerLinkActive="active">{{link.text}}</a></li>
                 <li><input type="text"><i class="glyphicon glyphicon-search"></i></li>
             </ul>
         </div>
