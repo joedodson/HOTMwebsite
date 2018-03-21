@@ -1,9 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations'
 
 @Component({
   selector: 'app-slideshow',
   templateUrl: './slideshow.component.html',
-  styleUrls: ['./slideshow.component.scss']
+  styleUrls: ['./slideshow.component.scss'],
+  animations: [
+    trigger('hiddenState', [
+      state('show', style({
+        opacity: 1
+      })),
+      state('hide', style({
+        opacity: 0
+      })),
+      transition('show => hide', animate('1000ms ease-out')),
+      transition('hide => show', animate('1000ms ease-in'))
+    ])
+  ]
 })
 export class SlideshowComponent implements OnInit {
 
@@ -16,6 +29,17 @@ export class SlideshowComponent implements OnInit {
   currentIndex = 0;
   timeoutRef = undefined;
 
+  show = false;
+
+  get stateName() {
+    return this.show ? 'show' : 'hide'
+  }
+
+  toggle(){
+    this.show = !this.show;
+  }
+
+
   isCurrentSlide(index):boolean{
     return this.currentIndex === index;
   }
@@ -23,6 +47,7 @@ export class SlideshowComponent implements OnInit {
   nextSlide():void{
     if(this.currentIndex === this.slides.length-1) this.currentIndex = 0;
     else this.currentIndex++;
+    this.startAnimation();
     this.updateDots();
     this.resetScroll();
   }
@@ -30,10 +55,24 @@ export class SlideshowComponent implements OnInit {
   prevSlide():void{
     if(this.currentIndex === 0) this.currentIndex = this.slides.length-1;
     else this.currentIndex--;
+    this.startAnimation();
     this.updateDots();
     this.resetScroll();
   }
 
+  startAnimation(){
+    var slides = document.getElementsByClassName("slide");
+    for(var i = 0; i < slides.length; ++i){
+      var slide = slides[i];
+      if(i === this.currentIndex) {
+        slide.classList.add("show");
+      }
+      else {
+        slide.classList.remove("show");
+      }
+    }
+  }
+  
   setSlide(index):void{
     this.currentIndex = index;
     this.updateDots();
