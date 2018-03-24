@@ -1,18 +1,20 @@
 <div class="ctnr">
     <div class="bg-image">
         <img src="../../assets/hero.jpg">
-        <div class="hero-text" id="hero-text">
-        <h1 class="animated fadeinout"></h1>
-        <h2 class="animated down" style="animation-delay:4s;">High Performance Auto Parts, Repair &amp; Installation</h2>
-        <button class="animated down" style="animation-delay:4.5s;">Get a Free Quote</button>
+        <div class="hero-text animated-ctnr" id="hero-text">
+            <h1 class="animated fadeinout"></h1>
+            <h2 class="animated down" style="animation-delay:4s;">High Performance Auto Parts, Repair &amp; Installation</h2>
+            <button class="animated down" style="animation-delay:4.5s;">Get a Free Quote</button>
         </div>
     </div>
-    <div class="hspacer"></div>
+    <div class="hspacer-fill"></div>
     <div class="section" id="s1">
         <div style="height:50px"></div>
-        <div class="section-header animated ltor"><h1>High Performance Parts &amp; Installation</h1></div>
-        <div class="hspacer animated rtol" style="animation-delay:.5s"></div>
-        <div class="inner-section parts">
+        <div class="animated-ctnr">
+            <div class="section-header animated ltor"><h1>High Performance Parts &amp; Installation</h1></div>
+            <div class="hspacer animated rtol" style="animation-delay:.5s"></div>
+        </div>
+        <div class="inner-section parts animated-ctnr">
             <div class="text animated fadein">
                 <h2 class="animated ltor">What We Carry</h2>
                 <p class="animated fadein" style="animation-delay:.5s">
@@ -25,13 +27,13 @@
                 </p>
                 <button class="animated fadein" style="animation-delay:.5s">Shop All Parts</button>
             </div>
-            <div class="icon-ctnr animated zm" style="animation-delay:.5s">
+            <div class="icon-ctnr animated zm" style="animation-delay:1s">
                 <ul>
                     <li *ngFor="let part of parts"><img src="../../assets/icons/parts/{{part}}"></li>
                 </ul>
             </div>
         </div>
-        <div class="inner-section makes">
+        <div class="inner-section makes animated-ctnr">
             <div class="icon-ctnr animated zm" style="animation-delay:.5s">
                 <ul>
                     <li *ngFor="let make of makes"><img src="../../assets/icons/makes/{{make}}"></li>
@@ -49,9 +51,11 @@
             </div>
         </div>
         <div class="spacer"></div>
-        <div class="section-header animated ltor"><h1>Automotive Service &amp; Repair</h1></div>
-        <div class="hspacer animated rtol" style="animation-delay:.5s"></div>
-        <div class="repair-icons-ctnr">
+        <div class="animated-ctnr">
+            <div class="section-header animated ltor"><h1>Automotive Service &amp; Repair</h1></div>
+            <div class="hspacer animated rtol" style="animation-delay:.5s"></div>
+        </div>
+        <div class="repair-icons-ctnr animated-ctnr">
             <ul>
                 <li *ngFor="let repair of repairs">
                     <div class="icon-info">
@@ -62,119 +66,93 @@
                 </li>
             </ul>
         </div>
-
-        <!-- <div class="card-ctnr">
-            <div class="card" id="1">
-                <img src="../../assets/supercharger.jpg">
-                <h1>Performance</h1>
-                <p>
-                    Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything
-                </p>
-                <button [routerLink]="['/services']">Performance</button>
-            </div>
-            <div class="card" id="2">
-                <img src="../../assets/supercharger.jpg">
-                <h1>Repair</h1>
-                <p>
-                    Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything
-                </p>
-                <button [routerLink]="['/services']">Repair</button>
-            </div>
-            <div class="card" id="3">
-                <img src="../../assets/supercharger.jpg">
-                <h1>Parts</h1>
-                <p>
-                    Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything Some text talking about anything
-                </p>
-                <button [routerLink]="['/products']">Products</button>
-            </div>
-        </div> -->
     </div>
-    <div class="hspacer animated ltor"></div>
-    <div class="section animated fadein" style="animation-delay:.5s" id="s2">
-        <div class="section-header animated fadein" style="animation-delay:.5s"><h1>Why Choose Us?</h1></div>
-        <div class="inner-section-about">
-            <div class="point-ctnr animated ltor" style="animation-delay:1.5s">
-                <div class="point">
-                    <div class="icon"><img src="../../assets/icons/aboutus/experienced.png"></div>
-                    <div class="text">
-                        <h3>Experienced</h3>
-                        <p>
-                            Our mechanic has been working on cars since he was a 
-                            teenager. Now, he has over 30 years professional experience 
-                            and knows his way around almost any car.
-                        </p>
+    <div class="animated-ctnr">
+        <div class="hspacer-fill animated ltor"></div>
+        <div class="section animated fadein" style="animation-delay:.5s" id="s2">
+            <div class="section-header animated fadein" style="animation-delay:.5s"><h1>Why Choose Us?</h1></div>
+            <div class="inner-section-about">
+                <div class="point-ctnr animated ltor" style="animation-delay:1.5s">
+                    <div class="point">
+                        <div class="icon"><img src="../../assets/icons/aboutus/experienced.png"></div>
+                        <div class="text">
+                            <h3>Experienced</h3>
+                            <p>
+                                Our mechanic has been working on cars since he was a 
+                                teenager. Now, he has over 30 years professional experience 
+                                and knows his way around almost any car.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="learn-more">
+                        <h3>Learn More</h3>
                     </div>
                 </div>
-                <div class="learn-more">
-                    <h3>Learn More</h3>
-                </div>
-            </div>
-            <div class="point-ctnr animated ltor" style="animation-delay:1.25s">
-                <div class="point">
-                    <div class="icon"><img src="../../assets/icons/aboutus/certified.png"></div>
-                    <div class="text">
-                        <h3>Certified</h3>
-                        <p>
-                            Our mechanic has been working on cars since he was a 
-                            teenager. Now, he has over 30 years professional experience 
-                            and knows his way around almost any car.
-                        </p>
+                <div class="point-ctnr animated ltor" style="animation-delay:1.25s">
+                    <div class="point">
+                        <div class="icon"><img src="../../assets/icons/aboutus/certified.png"></div>
+                        <div class="text">
+                            <h3>Certified</h3>
+                            <p>
+                                Our mechanic has been working on cars since he was a 
+                                teenager. Now, he has over 30 years professional experience 
+                                and knows his way around almost any car.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="point-ctnr animated ltor" style="animation-delay:1s">
-                <div class="point">
-                    <div class="icon"><img src="../../assets/icons/aboutus/quality.png"></div>
-                    <div class="text">
-                        <h3>Quality</h3>
-                        <p>
-                            Our mechanic has been working on cars since he was a 
-                            teenager. Now, he has over 30 years professional experience 
-                            and knows his way around almost any car.
-                        </p>
+                <div class="point-ctnr animated ltor" style="animation-delay:1s">
+                    <div class="point">
+                        <div class="icon"><img src="../../assets/icons/aboutus/quality.png"></div>
+                        <div class="text">
+                            <h3>Quality</h3>
+                            <p>
+                                Our mechanic has been working on cars since he was a 
+                                teenager. Now, he has over 30 years professional experience 
+                                and knows his way around almost any car.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="hspacer-fill animated rtol"></div>
     </div>
-    <div class="hspacer animated rtol"></div>
     <div class="section" id="s3">
         <div class="spacer" style="height:50px;"></div>
-        <div class="section-header animated ltor" style="animation-delay:1s"><h2>See What Our Customers Are Saying</h2></div>
-        <div class="hspacer animated rtol" style="animation-delay:1.5s"></div>
-        <div class="testimonial-ctnr">
-            <div class="testimonial animated zm" style="animation-delay:2s" *ngFor="let review of reviews">
-                <div class="top-ctnr">
-                    <div class="info">
-                        <h3>{{review.name}}</h3>
-                        <h4>{{review.car}}</h4>
+        <div class="animated-ctnr">
+            <div class="section-header animated ltor"><h2>See What Our Customers Are Saying</h2></div>
+            <div class="hspacer animated rtol" style="animation-delay:.5s"></div>
+            <div class="testimonial-ctnr">
+                <div class="testimonial animated zm" style="animation-delay:1s" *ngFor="let review of reviews">
+                    <div class="top-ctnr">
+                        <div class="info">
+                            <h3>{{review.name}}</h3>
+                            <h4>{{review.car}}</h4>
+                        </div>
+                        <div class="stars">
+                            <span class="fa fa-star checked animated zm-over" style="animation-delay:1.5s"></span>
+                            <span class="fa fa-star checked animated zm-over" style="animation-delay:1.6s"></span>
+                            <span class="fa fa-star checked animated zm-over" style="animation-delay:1.7s"></span>
+                            <span class="fa fa-star checked animated zm-over" style="animation-delay:1.8s"></span>
+                            <span class="fa fa-star checked animated zm-over" style="animation-delay:1.9s"></span>
+                        </div>
                     </div>
-                    <div class="stars">
-                        <span class="fa fa-star checked animated zm-over" style="animation-delay:2.5s"></span>
-                        <span class="fa fa-star checked animated zm-over" style="animation-delay:2.6s"></span>
-                        <span class="fa fa-star checked animated zm-over" style="animation-delay:2.7s"></span>
-                        <span class="fa fa-star checked animated zm-over" style="animation-delay:2.8s"></span>
-                        <span class="fa fa-star checked animated zm-over" style="animation-delay:2.9s"></span>
-                    </div>
+                    <div class="hspacer1"></div>
+                    <p>{{review.text}}</p>
                 </div>
-                <div class="hspacer"></div>
-                <p>{{review.text}}</p>
             </div>
-            <!-- <div class="testimonial">1</div>
-            <div class="testimonial">2</div>
-            <div class="testimonial">3</div>
-            <div class="testimonial">4</div> -->
-            <!-- <div *ngFor="let review of reviews" class="testimonial">{{review}}</div> -->
         </div>
         <div style="height:100px"></div>
-        <div class="section-header animated ltor"><h2>Check Out Our Work</h2></div>
-        <div class="hspacer animated rtol" ></div>
-        <app-slideshow class="animated fadein"></app-slideshow>
+        <div class="animated-ctnr">
+            <div class="section-header animated ltor"><h2>Check Out Our Work</h2></div>
+            <div class="hspacer animated rtol" ></div>
+        </div>
+        <app-slideshow></app-slideshow>
         <button>Visit Gallery</button>
     </div>
-    <div class="hspacer"></div>
-    <div class="section" id="s4">
+    <div class="hspacer-fill"></div>
+    <div class="section animated-ctnr" id="s4">
         <div class="section-header animated fadein"><h1>What Do You Have To Lose?</h1></div>
         <div class="subheader animated down" style="animation-delay:1s"><h2>Talk to our mechanic and find out how we can increase your performance</h2></div>
         <div class="button-ctnr">

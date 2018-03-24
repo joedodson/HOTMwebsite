@@ -1,9 +1,9 @@
-<div class="header">
+<div class="header" id="header">
     <div class="inner-container">
         <div class="image"><a routerLink="/home"><img src="../../assets/sample_logo.png"></a></div>
         <div class="nav-cntr" id="navbar">
             <ul>
-                <li *ngFor="let link of links"><a routerLink={{link.url}} routerLinkActive="active">{{link.text}}</a></li>
+                <li *ngFor="let link of links" (click)="pageChange()"><a routerLink={{link.url}} routerLinkActive="active">{{link.text}}</a></li>
                 <li><input type="text"><i class="glyphicon glyphicon-search"></i></li>
             </ul>
         </div>
@@ -14,14 +14,5 @@
                 <div class="bar3" id="b3"></div>
             </div>
         </div>
-        <!-- <div class="quick-info">
-            <div class="phone">
-                <i class="glyphicon glyphicon-earphone"></i><span>(303) 284-8197</span>
-            </div>
-            <div class="address">
-                <i class="glyphicon glyphicon-map-marker"></i><span>15562 E Fremont Dr., Centennial, CO 80112, USA</span>
-            </div>
-            <div class="cta"><button class="cta">Get a FREE Quote</button></div>
-        </div> -->
     </div>
 </div>

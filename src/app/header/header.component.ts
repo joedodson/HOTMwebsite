@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-header',
@@ -27,6 +28,13 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  //prevent header from doing animation delay on anything but home page
+  pageChange(){
+    if(this._router.url !== '/home'){
+      document.getElementById("header").style.animationDelay = '0s';
+    }
+  }
+
   menuClick():void{
     this.menuState = this.menuState === 'out' ? 'in' : 'out';
     var elem = document.getElementById("smc");
@@ -44,11 +52,16 @@ export class HeaderComponent implements OnInit {
     var items = document.getElementsByClassName("menuitems");
     
   }
-  constructor() { }
+
+  router = undefined;
+  constructor(private _router: Router) { 
+    this.router = _router;
+  }
 
   ngOnInit() {
     this.navbar = document.getElementsByClassName("header")[0];
     this.navOffset = this.navbar.offsetTop;
+    setTimeout(function(){this.pageChange();}.bind(this),0);
   }
 
 }

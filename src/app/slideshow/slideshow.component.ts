@@ -4,22 +4,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 @Component({
   selector: 'app-slideshow',
   templateUrl: './slideshow.component.html',
-  styleUrls: ['./slideshow.component.scss'],
-  animations: [
-    trigger('hiddenState', [
-      state('show', style({
-        opacity: 1
-      })),
-      state('hide', style({
-        opacity: 0
-      })),
-      transition('show => hide', animate('1000ms ease-out')),
-      transition('hide => show', animate('1000ms ease-in'))
-    ])
-  ]
+  styleUrls: ['./slideshow.component.scss']
 })
-export class SlideshowComponent implements OnInit {
 
+export class SlideshowComponent implements OnInit {
   INTERVAL = 3000;
   slides = [
     {name:"image1", src:"../../assets/carss1.jpg"},
@@ -28,17 +16,6 @@ export class SlideshowComponent implements OnInit {
   ];
   currentIndex = 0;
   timeoutRef = undefined;
-
-  show = false;
-
-  get stateName() {
-    return this.show ? 'show' : 'hide'
-  }
-
-  toggle(){
-    this.show = !this.show;
-  }
-
 
   isCurrentSlide(index):boolean{
     return this.currentIndex === index;

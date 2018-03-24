@@ -8,13 +8,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { RegMenuComponent } from './reg-menu/reg-menu.component';
 import { ServicesComponent } from './services/services.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductsComponent } from './products/products.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { PagevisitService } from './pagevisit.service';
 
 
 @NgModule({
@@ -23,7 +23,6 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     FooterComponent,
     HomepageComponent,
-    RegMenuComponent,
     ServicesComponent,
     SlideshowComponent,
     AboutUsComponent,
@@ -36,7 +35,9 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    PagevisitService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

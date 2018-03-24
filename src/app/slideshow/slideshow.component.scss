@@ -5,6 +5,7 @@
     width: 512px;
     height: 384px;
     text-align: center;
+    opacity: 0;
 }
 
 //images
@@ -102,6 +103,20 @@ i#left, i#right{
 
 #active{
       background-color: #717171;
+}
+
+.start.fadein{
+    animation: fadein 1s forwards;
+}
+//animations
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @media(min-width:1024px){

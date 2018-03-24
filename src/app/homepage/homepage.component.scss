@@ -51,10 +51,16 @@ img{
     height: 100px;
 }
 
-.hspacer{
+.hspacer-fill{
     width: 100%;
     height: 10px;
     background-color: #900000;
+}
+
+.hspacer{
+    height: 5px;
+    background-color: #900000;
+    margin: 0 auto;
 }
 
 h1, h2, h3{
@@ -79,15 +85,12 @@ h1, h2, h3{
     }
 }
 
-.section > .hspacer{
-    margin: 0 auto;
-    width: 70%;
-    height: 5px;
-}
-
 #s1{
     background-color: rgba(255, 255, 255, 0);
     text-align: center;
+    .hspacer{
+        width: 70%;
+    }
 }
 
 .inner-section{
@@ -245,7 +248,7 @@ h1, h2, h3{
     margin: 0;
     padding-bottom: 25px;
     text-align: center;
-    >.hspacer{
+    .hspacer{
         width: 50%;
         margin: 0 auto 25px auto;
     }
@@ -283,14 +286,16 @@ h1, h2, h3{
 
     .stars{
         font-size: 20px;
-    }
-    .hspacer{
-        width: 100%;
-        height: 2px;
-
+       // text-align: center;
     }
     .checked{
         color: gold;
+    }
+    .hspacer1{
+        background: #900000;
+        width: 100%;
+        height: 3px;
+        margin: 0 auto 25px 0;
     }
 }
 
@@ -390,7 +395,7 @@ button:hover{
 }
 
 .start.zm{
-    animation: fadein 1s forwards, zm 1s forwards;
+    animation: fadein 1s forwards, zm 1s forwards linear;
 }
 
 .start.zm-over{
@@ -410,7 +415,7 @@ button:hover{
 }
 
 .start.pulse{
-    animation: fadein 2s forwards 2s, zm 2s forwards ease-in-out 2s, pulse 3s linear 4s infinite forwards;
+    animation: fadein 2s forwards 2s, zm 2s forwards ease-in 2s, pulse 3s linear 4s infinite forwards;
 }
 
 .start.fadeinout{
@@ -442,10 +447,13 @@ button:hover{
 }
 
 @keyframes zm{
-    from {
+    0% {
         transform: scale(.5);
     }
-    to {
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
         transform: scale(1);
     }
 }
@@ -544,6 +552,9 @@ button:hover{
     .testimonial{
         .top-ctnr{
             flex-direction: row;
+        }
+        .stars{
+            text-align: center;
         }
     }
 }

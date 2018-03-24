@@ -32,8 +32,6 @@ export class FooterComponent implements OnInit {
 
     if(width < 650) document.getElementById("vs2").className = "hspacer";
     else document.getElementById("vs2").className = "vspacer";
-    
-    console.log(width);
   }
   
   constructor() { }

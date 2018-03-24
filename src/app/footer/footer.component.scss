@@ -98,8 +98,12 @@ a{
     
     li a{
         text-decoration: none;
-        color: #eeeeee;
+        color: #a0a0a0;
         font-size: .7em;
+    }
+
+    li a:hover{
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -122,10 +126,12 @@ a{
             margin: 10px auto;
             text-align: center;
             text-decoration: none;
+            transition: .5s;
         }
         
         .fa:hover{
             opacity: .7;
+            border-radius: 50%;
         }
         
         .fa-facebook {
@@ -166,7 +172,7 @@ a{
     }
 }
 
-@media only(min-width:650px){
+@media(min-width:650px){
     .image-ctnr{
         height: 200px;
         img{
@@ -179,7 +185,6 @@ a{
     .navigate-ctnr{
         margin-left: 10px;
     }
-
 }
 
 @media(min-width:850px){
